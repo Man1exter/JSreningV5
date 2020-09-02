@@ -2,31 +2,32 @@ let options = [];
 
 
 
-
-
 //add elements
+const addOptions = (e) => {
+    e.preventDefault();
+    document.querySelector('input').value;
+}
+
 document.querySelector(".add").addEventListener("click", addOptions)
 
-const addOptions = () => {
-   let option = options.push();
-}
 
 
 
 //delete elements
-document.querySelector(".clean").addEventListener("click", deleteElements)
-
 const deleteElements = (e) => {
-e.preventDefault();
-options.length = 0;
-
-}
+    e.preventDefault();
+    options.length = 0;
+    
+    }
+//delete elements
+document.querySelector(".clean").addEventListener("click", deleteElements)
 
 
 
 //show elements
-document.querySelector(".ShowOptions").addEventListener("click", showOptions)
-
-const showOptions = () => {
+const showOption = () => {
     alert(options.join(" --- ---"));
 }
+
+document.querySelector(".ShowOption").addEventListener("click", showOptions)
+
