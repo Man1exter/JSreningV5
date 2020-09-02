@@ -1,4 +1,4 @@
-let options = ['option 1', 'option 2'];
+let options = ['option 1 ', 'option 2 '];
 
 
 
@@ -9,39 +9,36 @@ const showAdvice = () => {
 
 
 const addOption = (e) => {
-
     e.preventDefault();
     const input = document.querySelector('input');
-    input.value = "";
-    alert(`add ${input.value}`);
     options.push(input.value);
+    alert(`add ${input.value}`);
+    input.value = " ";
 }
 
 
 const deleteElements = (e) => {
-
     e.preventDefault();
     options.length = 0;
     document.querySelector('h1').textContent = "";
-
     }
 
 
-    const showOption = () => {
-    alert(options.join(" -- --"));
+const showOption = () => {
+    alert(options.join(" "));
     }
 
 //show elements
-document.querySelector(".add").addEventListener("click", addOption)
+document.querySelector(".add").addEventListener("click", addOption);
 
 
 //delete elements
-document.querySelector(".clean").addEventListener("click", deleteElements)
+document.querySelector(".clean").addEventListener("click", deleteElements);
 
 
 //show elements
-document.querySelector(".ShowOptions").addEventListener("click", showOption)
+document.querySelector(".ShowOptions").addEventListener("click", showOption);
 
 
-document.querySelector(".ShowAdvice").addEventListener("click", showAdvice)
+document.querySelector(".ShowAdvice").addEventListener("click", showAdvice);
 
