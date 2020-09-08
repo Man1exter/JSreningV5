@@ -69,12 +69,12 @@ const time = 60;
 const addLetter = () => {
  spanText.textContent +=  texet[moveLetter];
  moveLetter++;
- if(moveLetter === texet.length) clearInterval(indexTyping)
+ if(moveLetter === texet.length) clearInterval(indexTyping);
 }
 
 
 
-const indexTyping = setInterval(addLetter, time)
+const indexTyping = setInterval(addLetter, time);
 
 
 
