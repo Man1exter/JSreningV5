@@ -45,8 +45,9 @@ transition: .3s linear;
     background-color: lightblue;
 }
 input:hover{
-    border: 2px solid red;
+    border: 2px solid rgb(9, 255, 0);
     transition: .3s linear;
+    color: blue;
 }
 h1{
     position: absolute;
@@ -86,3 +87,4 @@ div:hover{
 .cursor.move{
     opacity: 1;
 }
+
