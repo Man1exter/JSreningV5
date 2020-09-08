@@ -57,7 +57,7 @@ document.querySelector(".ShowAdvice").addEventListener("click", showAdvice);
 
 
 const spanText = document.querySelector('.text')
-const spanTyp = document.querySelector('cursor')
+const spanTyp = document.querySelector('.cursor')
 const texet = 'Hey Hey welcome sia rc well good nice spark sit the items dol webistes complete functions'
 
 
@@ -73,10 +73,12 @@ const addLetter = () => {
  if(moveLetter === texet.length) clearInterval(indexTyping);
 }
 
-
+const addTyping = () => {
+    spanTyp.classList.toggle('move');
+}
 
 const indexTyping = setInterval(addLetter, time);
-setInterval(addTyping, 300)
+setInterval(addTyping, 600)
 
 
 ///////////////////////////////////////////////////////
