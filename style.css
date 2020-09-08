@@ -78,3 +78,11 @@ div:hover{
     border: 3px solid blue;
     color: green;
 }
+
+.cursor{
+    opacity: 0;
+    transition: .3s linear;
+}
+.cursor.move{
+    opacity: 1;
+}
