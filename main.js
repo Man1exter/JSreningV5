@@ -57,6 +57,7 @@ document.querySelector(".ShowAdvice").addEventListener("click", showAdvice);
 
 
 const spanText = document.querySelector('.text')
+
 const texet = 'Hey Hey welcome sia rc well good nice spark sit the items dol webistes complete functions'
 
 
