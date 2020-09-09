@@ -97,7 +97,8 @@ let addLetters = 0;
 const times = 50;
 
 
-
+let moveWord = 0;
+let moveArray = 0;
 
 
 
@@ -106,7 +107,14 @@ const times = 50;
 
 
 const animationLetter = () =>{
-
+    if(moveWord >= 0){
+           spanWord.textContent += word[moveWord][moveArray];
+                  moveWord++;
+    }
+ if(moveWord === word[moveWord].length){
+      moveArray++
+           if(moveArray === word.length) return;
+ }
 }
 animationLetter()
 
