@@ -61,7 +61,7 @@ const spanTyp = document.querySelector('.cursor')
 const texet = 'Hey Hey welcome sia rc well good nice spark sit the items dol webistes complete functions';
 
 
-let moveLetter = 0;
+let moveLetter = 0;   //add letter with time below
 const time = 60;
 
 
