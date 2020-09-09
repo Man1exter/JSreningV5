@@ -63,7 +63,7 @@ h1{
 }
 h1:hover{
     color: blue;
-    background-color: gray;
+    background-color: rgb(0, 255, 255);
 }
 
 div{
@@ -72,11 +72,11 @@ div{
     margin: 150px 0px 0px 100px;
     font-size: 20px;
     letter-spacing: 1px;
-    border: 3px solid black;
+    border: 2px solid black;
     transition: .3s linear;
 }
 div:hover{
-    border: 3px solid blue;
+    border: 2px solid blue;
     color: green;
 }
 
