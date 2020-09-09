@@ -91,7 +91,7 @@ setInterval(addTyping, 600)
 
 const spanWord = document.querySelector(".words");
 const spaceLet = document.querySelector(".space");
-const word = ['text1','text2','text3'];
+const word = ['text1', 'text2', 'text3'];
 
 let addLetters = 0;
 const times = 50;
@@ -107,14 +107,24 @@ let moveArray = 0;
 
 
 const animationLetter = () =>{
+    
     if(moveWord >= 0){
            spanWord.textContent += word[moveWord][moveArray];
-                  moveWord++;
     }
+                  
+    moveWord++;
  if(moveWord === word[moveWord].length){
       moveArray++
-           if(moveArray === word.length) return;
+           
+      if(moveArray === word.length) return;
+
+           return setTimeout(()=>{
+               addLetter = -15;
+               spanWord.textContent = '';
+                     animationLetter();
+           }, 1000)
  }
+ setTimeout(animationLetter, 500)
 }
 animationLetter()
 
