@@ -87,4 +87,17 @@ h1:hover{
 .cursor.move{
     opacity: 1;
 }
+.two{
+    font-family: arial;
+    max-width: 85%;
+    margin: 50px 0px 0px 100px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    transition: .3s linear;
+}
+.two:hover{
+    border: 2px solid blue;
+    color: green;
+}
 
