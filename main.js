@@ -92,3 +92,6 @@ setInterval(addTyping, 600)
 const spanWord = document.querySelector(".words");
 const spaceLet = document.querySelector(".space");
 const word = ['text1','text2','text3'];
+
+let addLetters = 0;
+const time = 50;

@@ -101,3 +101,10 @@ h1:hover{
     color: green;
 }
 
+
+.space{
+    opacity: 0;
+}
+.space.tip{
+    opacity: 1;
+}
