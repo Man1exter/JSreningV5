@@ -97,12 +97,25 @@ let addLetters = 0;
 const times = 50;
 
 
+
+
+
+
+
+
+
+
 const animationLetter = () =>{
 
 }
 animationLetter()
 
 
+
+
+
+
+//typing space
 
 const addLat = () => {
     spaceLet.classList.toggle("tip")
