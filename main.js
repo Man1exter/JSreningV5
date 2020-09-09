@@ -94,4 +94,18 @@ const spaceLet = document.querySelector(".space");
 const word = ['text1','text2','text3'];
 
 let addLetters = 0;
-const time = 50;
+const times = 50;
+
+
+const animationLetter = () =>{
+
+}
+animationLetter()
+
+
+
+const addLat = () => {
+    spaceLet.classList.toggle("tip")
+}
+
+setInterval(addLat, 500)
